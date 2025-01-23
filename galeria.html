@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Galeria/photo/MSK.png">
+    <title>Galeria</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        #foto {
+            width: 70%;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        img {
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid gray;
+            transition: all ease-in-out 0.5s ;
+
+        }
+
+        img:hover {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="glusza.html">GŁUSZA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="projekty.html">PROJEKTY</a></li>
+                <li><a href="bilety-muzeumSlaskie.html">BILETY</a></li>
+                <li><a href="publikacja.html">PUBLIKACJA</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section>
+            <h1>GALERIA</h1>
+            <section id="foto">
+                <img src="/galeria/photo/glusza1.jpg">
+                <img src="/galeria/photo/glusza2.jpg">
+                <img src="/galeria/photo/glusza3.jpg">
+                <img src="/galeria/photo/glusza4.jpg">
+                <img src="/galeria/photo/glusza5.jpg">
+                <img src="/galeria/photo/glusza6.jpg">
+                <img src="/galeria/photo/glusza7.jpg">
+                <img src="/galeria/photo/glusza8.jpg">
+                <img src="/galeria/photo/glusza9.jpg">
+                <img src="/galeria/photo/glusza10.jpg">
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wystawa prowadzi nas przez meandry typografii, wielozmysłowych doświadczeń i multimediów. <br>
+           Skłania do refleksji nad znaczeniem języka w rozwoju kultury, zrozumienia różnic pomiędzy językami<br> fonicznymi i przestrzenno-wizualnymi,
+           do których zaliczają się wszystkie języki migowe.</p>
+    </footer>
+
+</body>
+</html>

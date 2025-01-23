@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Galeria/photo/MSK.png">
+    <title>Bilety - Muzeum Śląskie</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .ticket-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ticket {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .ticket p {
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .btn {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn.disabled {
+            background-color: #888;
+            cursor: not-allowed;
+        }
+
+        .ticket.gold {
+            background-color: #f9c70a;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <nav>
+            <ul>
+            <li><a href="glusza.html">GŁUSZA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="projekty.html">PROJEKTY</a></li>
+                <li><a href="bilety-muzeumSlaskie.html">BILETY</a></li>
+                <li><a href="publikacja.html">PUBLIKACJA</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1>Zachęcamy do zakupu biletów on-line oraz płatności bezgotówkowych</h1>
+    </header>
+    
+    <form action="bilety.php" method="post">
+    <section class="ticket-options">
+        <div class="ticket">
+            <h2>Wszystkie Wystawy</h2>
+            <p>Wystawy stałe i czasowe (ważny 1 dzień)</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Wszystkie Wystawy Czasowe</h2>
+            <p>Wystawy czasowe (ważny 1 dzień)</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Wieża Widokowa</h2>
+            <p>Wieża widokowa tymczasowo nieczynna</p>
+            <label class="btn disabled">Ceny biletów</label>
+        </div>
+
+        <div class="ticket">
+            <h2>Abonament Roczny</h2>
+            <p>Wszystkie wystawy stałe i czasowe (do zakupu tylko w kasach)</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Wspólny Bilet</h2>
+            <p>Muzeum Śląskie w Katowicach i Muzeum Górnośląskie w Bytomiu</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Muzeum Śląskie z Przewodnikiem</h2>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Bilet Podarunkowy</h2>
+            <p>Jednorazowe zwiedzanie wystaw (bez "Na tropie Tomka")</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket">
+            <h2>Na Tropie Tomka</h2>
+            <p>Jednorazowe zwiedzanie przestrzeni edukacyjnej "Na tropie Tomka"</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+
+        <div class="ticket gold">
+            <h2>Złoty Bilet</h2>
+            <p>Wszystkie wystawy stałe i czasowe (do zakupu tylko w kasach)</p>
+            <input type="submit" value="Ceny biletów" class="btn">
+        </div>
+    </section>
+    </form> <br>
+
+    <footer>
+            <p>&copy; 2024 Muzeum Śląskie</p>
+    </footer>
+
+</body>
+</html>
